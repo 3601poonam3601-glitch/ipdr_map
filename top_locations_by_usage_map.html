@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fddf349ce76194834acdcb7a89221b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fddf349ce76194834acdcb7a89221b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fddf349ce76194834acdcb7a89221b9 = L.map(
+                "map_5fddf349ce76194834acdcb7a89221b9",
+                {
+                    center: [29.35725, 76.99541],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aff8aa8fcbab38a35930201a81d61ba2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aff8aa8fcbab38a35930201a81d61ba2.addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var marker_8e76fdd9d57ca5687e36a588ecc7c869 = L.marker(
+                [29.35725, 76.99541],
+                {
+}
+            ).addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var icon_50a38ff28745b78407057d3734095b48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbc443fb86804ee579202d7ba353ec99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_146485139ab20904a13cd4108f64febe = $(`<div id="html_146485139ab20904a13cd4108f64febe" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 1<br><b>Data Usage:</b> 1,519,192.32 MB<br><b>Location:</b> Panipat, Haryana, 132100, India<br><b>Lat:</b> 29.35725<br><b>Lon:</b> 76.99541</div>`)[0];
+                popup_dbc443fb86804ee579202d7ba353ec99.setContent(html_146485139ab20904a13cd4108f64febe);
+            
+        
+
+        marker_8e76fdd9d57ca5687e36a588ecc7c869.bindPopup(popup_dbc443fb86804ee579202d7ba353ec99)
+        ;
+
+        
+    
+    
+            marker_8e76fdd9d57ca5687e36a588ecc7c869.bindTooltip(
+                `<div>
+                     Rank 1 (Usage: 1,519,192.32 MB)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e76fdd9d57ca5687e36a588ecc7c869.setIcon(icon_50a38ff28745b78407057d3734095b48);
+            
+    
+            var marker_f25162ff8205ad42fbf65316488ed443 = L.marker(
+                [29.31383, 77.02219],
+                {
+}
+            ).addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var icon_b0e5c73527e2fe69d525af6601035747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bb28e5a2c08a03efd21168e1450ebef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a5a8ac152b06dd98cba765dd1f0f6f0 = $(`<div id="html_0a5a8ac152b06dd98cba765dd1f0f6f0" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 2<br><b>Data Usage:</b> 63,751.48 MB<br><b>Location:</b> Bapoli, Panipat, Haryana, India<br><b>Lat:</b> 29.31383<br><b>Lon:</b> 77.02219</div>`)[0];
+                popup_3bb28e5a2c08a03efd21168e1450ebef.setContent(html_0a5a8ac152b06dd98cba765dd1f0f6f0);
+            
+        
+
+        marker_f25162ff8205ad42fbf65316488ed443.bindPopup(popup_3bb28e5a2c08a03efd21168e1450ebef)
+        ;
+
+        
+    
+    
+            marker_f25162ff8205ad42fbf65316488ed443.bindTooltip(
+                `<div>
+                     Rank 2 (Usage: 63,751.48 MB)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f25162ff8205ad42fbf65316488ed443.setIcon(icon_b0e5c73527e2fe69d525af6601035747);
+            
+    
+            var marker_e303de8575acb6587c0ef483720b8455 = L.marker(
+                [29.37787, 76.97058],
+                {
+}
+            ).addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var icon_44e63cb0958882befeb57daaddd8d407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1792696c69ad4bf9e7ad6ebaaca979af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf963b85a581bdaf2515e6dc9a7ceca8 = $(`<div id="html_bf963b85a581bdaf2515e6dc9a7ceca8" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 3<br><b>Data Usage:</b> 12,708.47 MB<br><b>Location:</b> Shiv Nagar, Panipat, Haryana, 132100, India<br><b>Lat:</b> 29.37787<br><b>Lon:</b> 76.97058</div>`)[0];
+                popup_1792696c69ad4bf9e7ad6ebaaca979af.setContent(html_bf963b85a581bdaf2515e6dc9a7ceca8);
+            
+        
+
+        marker_e303de8575acb6587c0ef483720b8455.bindPopup(popup_1792696c69ad4bf9e7ad6ebaaca979af)
+        ;
+
+        
+    
+    
+            marker_e303de8575acb6587c0ef483720b8455.bindTooltip(
+                `<div>
+                     Rank 3 (Usage: 12,708.47 MB)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e303de8575acb6587c0ef483720b8455.setIcon(icon_44e63cb0958882befeb57daaddd8d407);
+            
+    
+            var marker_bdb452f410f73f23f0fb3f7a79f1cd91 = L.marker(
+                [29.38003, 76.96995],
+                {
+}
+            ).addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var icon_dc110a553c37cdb60665e83d426317f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_816fcd3cf08b38c519bfb88560fdbbc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b34fab21451cda3569ddd300b586c962 = $(`<div id="html_b34fab21451cda3569ddd300b586c962" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 4<br><b>Data Usage:</b> 12,371.12 MB<br><b>Location:</b> Shiv Nagar, Panipat, Haryana, 132100, India<br><b>Lat:</b> 29.38003<br><b>Lon:</b> 76.96995</div>`)[0];
+                popup_816fcd3cf08b38c519bfb88560fdbbc7.setContent(html_b34fab21451cda3569ddd300b586c962);
+            
+        
+
+        marker_bdb452f410f73f23f0fb3f7a79f1cd91.bindPopup(popup_816fcd3cf08b38c519bfb88560fdbbc7)
+        ;
+
+        
+    
+    
+            marker_bdb452f410f73f23f0fb3f7a79f1cd91.bindTooltip(
+                `<div>
+                     Rank 4 (Usage: 12,371.12 MB)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bdb452f410f73f23f0fb3f7a79f1cd91.setIcon(icon_dc110a553c37cdb60665e83d426317f2);
+            
+    
+            var marker_ca9945bb2f95de3c8e93ff2b81e1fd8a = L.marker(
+                [29.37072, 76.97886],
+                {
+}
+            ).addTo(map_5fddf349ce76194834acdcb7a89221b9);
+        
+    
+            var icon_f7865a0c872ba340b0212aa5f860f734 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b626d13e4ddc0c844bbca011ace6f2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c74ba08af57e11d147ff965c39376350 = $(`<div id="html_c74ba08af57e11d147ff965c39376350" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 5<br><b>Data Usage:</b> 7,475.16 MB<br><b>Location:</b> Sector 25, Panipat, Haryana, 132100, India<br><b>Lat:</b> 29.37072<br><b>Lon:</b> 76.97886</div>`)[0];
+                popup_6b626d13e4ddc0c844bbca011ace6f2f.setContent(html_c74ba08af57e11d147ff965c39376350);
+            
+        
+
+        marker_ca9945bb2f95de3c8e93ff2b81e1fd8a.bindPopup(popup_6b626d13e4ddc0c844bbca011ace6f2f)
+        ;
+
+        
+    
+    
+            marker_ca9945bb2f95de3c8e93ff2b81e1fd8a.bindTooltip(
+                `<div>
+                     Rank 5 (Usage: 7,475.16 MB)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca9945bb2f95de3c8e93ff2b81e1fd8a.setIcon(icon_f7865a0c872ba340b0212aa5f860f734);
+            
+</script>
+</html>
